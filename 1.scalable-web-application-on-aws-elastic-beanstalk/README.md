@@ -1,6 +1,6 @@
 # Project Title: Scalable Web Application on AWS Elastic Beanstalk
 
-## Objective: Create a web application using Java and Spring Boot and deploy it on AWS Elastic Beanstalk for easy scalability and management.
+**Objective:** Create a web application using Java and Spring Boot and deploy it on AWS Elastic Beanstalk for easy scalability and management.
 
 ## Project Steps:
 
