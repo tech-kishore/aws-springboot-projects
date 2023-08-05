@@ -21,7 +21,8 @@ public class InitProfileCommandLineRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		prodRepo.save(new Product("Book","Brief Desc" ,"Elaborate Desc",200.00));
+		prodRepo.save(new Product("Book","https://some-image-server.com/img/book","Brief Desc" ,"Elaborate Desc",200.00));
+		prodRepo.save(new Product("Barbie Doll","https://some-image-server.com/img/barie","Brief Desc of barie" ,"Elaborate Desc of barie",500.00));
 	}
 
 }
