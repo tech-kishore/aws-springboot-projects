@@ -18,6 +18,9 @@ public class Product {
 	/** The name of the product. */
 	@Column(name = "name", nullable = false, unique = true)
 	private String name;
+
+	private String imageURL;
+
 	/** The short description of the product. */
 	@Column(name = "short_description", nullable = false)
 	private String shortDescription;
@@ -31,9 +34,10 @@ public class Product {
 	public Product() {
 	}
 
-	public Product(String name, String shortDescription, String longDescription, Double price) {
+	public Product(String name, String imageURL, String shortDescription, String longDescription, Double price) {
 		super();
 		this.name = name;
+		this.imageURL = imageURL;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
 		this.price = price;
@@ -53,6 +57,14 @@ public class Product {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getImageURL() {
+		return imageURL;
+	}
+
+	public void setImageURL(String imageURL) {
+		this.imageURL = imageURL;
 	}
 
 	public String getShortDescription() {
@@ -81,7 +93,8 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", shortDescription=" + shortDescription + ", longDescription="
-				+ longDescription + ", price=" + price + "]";
+		return "Product [id=" + id + ", name=" + name + ", imageURL=" + imageURL + ", shortDescription="
+				+ shortDescription + ", longDescription=" + longDescription + ", price=" + price + "]";
 	}
+
 }
